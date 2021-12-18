@@ -27,8 +27,8 @@ def index(request):
         )
         topic = 'ru.openbank.pushtest.voip'
 
-        # client = APNsClient('/app/hello/voip.pem', use_sandbox=True, use_alternative_port=False)
-        client = APNsClient('/Users/kirillvolodin/P2P/python-getting-started/hello/voip.pem', use_sandbox=True, use_alternative_port=False)
+        client = APNsClient('/app/hello/voip.pem', use_sandbox=True, use_alternative_port=False)
+        # client = APNsClient('/Users/kirillvolodin/P2P/python-getting-started/hello/voip.pem', use_sandbox=True, use_alternative_port=False)
         client.send_notification(token_hex, payload, topic)
 
         # To send multiple notifications in a batch
