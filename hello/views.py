@@ -25,7 +25,7 @@ def index(request):
                 "wsRoom": ws_room
             }
         )
-        topic = 'ru.openbank.pushtest.voip'
+        topic = 'ru.openbank.pushtest2.voip'
         print("before APNsClient")
         print(os.listdir(os.path.dirname(__file__)))
         client = APNsClient('/app/hello/voip.pem', use_sandbox=True, use_alternative_port=False)
